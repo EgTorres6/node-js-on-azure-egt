@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee - Dice Roller</title>
+    <link rel="stylesheet" href="dice.css">
+</head>
+<body onload="rollDice()">
+    <div class="container">
+        <h1>Dice Roller</h1>
+        <p><b>Roll the dice by clicking the button, or press enter to roll again.</b><p>
+        <div class="dice-container">
+            <div class="dice" id="dice1">1</div>
+            <div class="dice" id="dice2">1</div>
+            <div class="dice" id="dice3">1</div>
+            <div class="dice" id="dice4">1</div>
+            <div class="dice" id="dice5">1</div>
+        </div>
+        <button id="rollButton" onclick="rollDice()" autofocus><b>Roll Dice</b></button>
+    </div>
+    <div class="rules">
+        <div class="instructions">
+            <h2>Instructions</h2>
+            <p>You get 3 tries to roll the 5 dice, but you can choose to keep multiple dice between rolls and only re-roll the others. Reference the the roll sheets at the bottom to understand the scoring. There is 13 "rounds and the score card is devided into the upper and lower section. Each round you choose one category to score in and can't use that one again. After going through the 13 rounds, and each player filling out their scorecard, we determine the player with the highest total score and they're the winner.</p>
+        </div>
+        <div class="scorecard">
+            <h2>Scorecard</h2>
+            <img src="C:\Users\Edgar Torres\OneDrive\CPSC44000\Dice\WebDiceRoller\Printable-Yahtzee-Score-Sheet.png"  alt="YahtzeeScorecard">
+        </div>
+    </div>
+    </section>
+    <section class ="images">
+        <div class="images">
+            <h2>Upper Section</h2>
+            <img src="C:\Users\Edgar Torres\OneDrive\CPSC44000\Dice\WebDiceRoller\YahtzeeRollsUpperSection.jpeg" width="100%" alt="YahtzeeRollsUpperSection">
+            <h2>Lower Section</h2>
+            <img src="C:\Users\Edgar Torres\OneDrive\CPSC44000\Dice\WebDiceRoller\YahtzeeRollsLowerSection.jpeg" width="100%" alt="YahtzeeRollsLowerSection">
+        </div>
+    </section>
+    <script src="dice.js"></script>
+</body>
+</html>
